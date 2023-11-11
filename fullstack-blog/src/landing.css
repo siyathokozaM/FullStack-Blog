@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  background: #000;
+  color: aqua;
+  margin: 0;
+  padding: 0;
+}
+
+.lead {
+  max-width: 500px;
+  margin: 20px auto;
+  font-size: 22px;
+}
