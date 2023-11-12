@@ -1,14 +1,12 @@
 import "../navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid text-center justify-content-center">
-        {/* <a class="navbar-brand" href="#">
-          Navbar
-        </a> */}
+    <nav className="navbar navbar-expand-lg">
+      <div className="container-fluid text-center justify-content-center">
         <button
-          class="navbar-toggler"
+          className="navbar-toggler btn "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -16,22 +14,25 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-center "
+          className="collapse navbar-collapse justify-content-center "
           id="navbarNavAltMarkup"
         >
-          <div class="navbar-nav ">
-            <a class="nav-link p-3" aria-current="page" href="#">
+          <div className="navbar-nav ">
+            <Link className="nav-link p-3" aria-current="page" to="/">
               Home
-            </a>
-            <a class="nav-link p-3" href="#">
+            </Link>
+            <Link className="nav-link p-3" to="/blog">
               blog
-            </a>
-            <a class="nav-link p-3" href="#">
+            </Link>
+            <Link className="nav-link p-3" to="/post">
+              post
+            </Link>
+            <Link className="nav-link p-3" to="/login-signup">
               login
-            </a>
+            </Link>
           </div>
         </div>
       </div>
